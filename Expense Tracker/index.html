@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tracker-header">입출금 내역서</div>
+        <div class="tracker-total__money">
+            <span class="tracker-total__money-title">현재 잔액</span>
+            <span class="tracker-total__money-balance"></span>
+        </div>
+        <div class="tracker-category">
+            <div class="tracker-category__income">
+                <span class="tracker-category__income-title">수입 </span>
+                <span class="tracker-category__income-value"></span>
+            </div>
+            <div class="tracker-category__expense">
+                <span class="tracker-category__expense-title">지출 </span>
+                <span class="tracker-category__expense-value"></span>
+            </div>
+        </div>
+        <div class="tracker-history">
+            <span class="tracker-history__title">기록</span>
+            <div class="tracker-history__list"></div>
+        </div>
+        <div class="tracker-transaction">
+            <div class="tracker-transaction__text">내역
+                <input type="text" class="input-text" placeholder="내용을 입력해주세요" required>
+            </div>
+            <div class="tracker-transaction__amount">금액
+                <input type="text" class="input-amount" placeholder="금액을 입력해주세요" required>
+            </div>
+        </div>
+        <button class="add-transaction">항목 추가</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
